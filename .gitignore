@@ -1,0 +1,15 @@
+# Python environment & cache
+venv/
+__pycache__/
+*.pyc
+
+# Local data files
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# IDE settings
+.vscode/
+.DS_Store
+data/*.parquet
