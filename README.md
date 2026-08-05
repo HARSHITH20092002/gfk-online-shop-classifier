@@ -1,16 +1,18 @@
 # GfK Online Shop Classifier
 
-An intelligent dual-solution system designed to discover, fetch, and classify web domains into **Shop** vs. **Non-Shop** categories using a hybrid approach combining heuristic web scraping rules and machine learning (TF-IDF + Logistic Regression).
+So this is an intelligent dual way system that tries to discover , then fetch, and later classify web domains into **Shop** vs. **Non-Shop**. It kinda mixes heuristic web scraping rules with machine learning too, specifically TF-IDF plus Logistic Regression, in a hybrid manner.
 
 ---
 
 ## Key Features
 
 - **Dual-Engine Architecture:**
-  - **Solution 1 (Rule-Based Heuristic Engine):** Scans scraped web content for e-commerce indicators (e.g., cart keywords, checkout paths, payment provider signatures, product price structures).
-  - **Solution 2 (Machine Learning Engine):** Uses TF-IDF n-gram vectorization on scraped page metadata, body text, and structural elements with a trained Logistic Regression model.
-- **Interactive Web Dashboard:** Built with Streamlit for single-domain testing and real-time confidence visualizer.
-- **Batch Benchmarking Suite:** Automated script to evaluate model accuracy, latency, and decision-engine breakdown across 50+ domains from GfK market discovery Parquet datasets.
+  - **Solution 1 (Rule-Based Heuristic Engine):** It goes through scraped page text and looks for e commerce signals like cart related words, checkout paths , payment provider clues, and those product price patterns that show up often.
+  - **Solution 2 (Machine Learning Engine):** It takes TF-IDF n-grams from scraped page metadata, the actual body text, and also from structural pieces. After that it runs a Logistic Regression decision model so the results feel more stable.
+
+- **Interactive Web Dashboard:** Built with Streamlit, mainly for single-domain checks, plus a live confidence visualizer so you can see what the system is “thinking” .  
+
+- **Batch Benchmarking Suite:** There is an automated evaluation script that measures model accuracy, latency, and even the breakdown of decisions, across 50+ domains pulled from GfK market discovery Parquet datasets.
 
 ---
 
